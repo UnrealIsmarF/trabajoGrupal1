@@ -5,10 +5,17 @@ import java.util.ArrayList;
 
 public class ingresoPropietariosModel {
 
-    public ArrayList<IngresoPropietarios> ListaIngresoPropietarios = new ArrayList<IngresoPropietarios>
+public ArrayList<IngresoPropietarios> ListaIngresoPropietarios = new ArrayList<IngresoPropietarios>();
     
-            public void IngresoPropietarios(String apellidos, String nombre, String telefono)
+public void IngresoPropietarios(String Apellidos, String Nombre, String Telefono)
             {
-                IngresoPropietarios NuevoPropietario = new IngresoPropietarios(apellido, nombre, telefono);
+                IngresoPropietarios NuevoPropietario = new IngresoPropietarios(Apellidos,
+                        Nombre, Telefono);
+                 this.ListaIngresoPropietarios.add(NuevoPropietario);
+            }
+
+            public ArrayList ListarIngresoPropietario()
+            {
+                return ListaIngresoPropietarios;
             }
 }
