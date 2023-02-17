@@ -79,6 +79,9 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="entrega">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="33" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="ENTREGA DE EQUIPO"/>
       </Properties>
       <AuxValues>
@@ -87,6 +90,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="cod">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="33" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Codigo de Equipo"/>
       </Properties>
       <AuxValues>
@@ -95,6 +101,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="nom">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="33" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Nombre de la Persona que recibe"/>
       </Properties>
       <AuxValues>
@@ -103,6 +112,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="fecha">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="33" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Fecha de entrega"/>
       </Properties>
       <AuxValues>
@@ -111,6 +123,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="descrip">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="33" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Descripcion Solucion"/>
       </Properties>
       <AuxValues>
@@ -118,6 +133,11 @@
       </AuxValues>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="33" type="rgb"/>
+        </Property>
+      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -168,6 +188,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnentregar">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="33" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Entregar Equipo"/>
       </Properties>
       <AuxValues>

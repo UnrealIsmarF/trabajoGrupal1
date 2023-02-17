@@ -38,15 +38,22 @@ public class EntregadeEquipo extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        entrega.setForeground(new java.awt.Color(51, 51, 0));
         entrega.setText("ENTREGA DE EQUIPO");
 
+        cod.setForeground(new java.awt.Color(51, 51, 0));
         cod.setText("Codigo de Equipo");
 
+        nom.setForeground(new java.awt.Color(51, 51, 0));
         nom.setText("Nombre de la Persona que recibe");
 
+        fecha.setForeground(new java.awt.Color(51, 51, 0));
         fecha.setText("Fecha de entrega");
 
+        descrip.setForeground(new java.awt.Color(51, 51, 0));
         descrip.setText("Descripcion Solucion");
+
+        jScrollPane1.setForeground(new java.awt.Color(51, 51, 0));
 
         tbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -61,6 +68,7 @@ public class EntregadeEquipo extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tbl);
 
+        btnentregar.setForeground(new java.awt.Color(51, 51, 0));
         btnentregar.setText("Entregar Equipo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
