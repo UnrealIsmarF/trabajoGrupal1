@@ -56,7 +56,7 @@ public class EntregadeEquipo extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "CODIGO", "PERSONA", "FECHA", "DESCRIPCION"
             }
         ));
         jScrollPane1.setViewportView(tbl);
@@ -147,13 +147,13 @@ public class EntregadeEquipo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnentregar;
-    private javax.swing.JTextField cod;
-    private javax.swing.JTextField descrip;
-    private javax.swing.JTextField entrega;
-    private javax.swing.JTextField fecha;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField nom;
+    public javax.swing.JButton btnentregar;
+    public javax.swing.JTextField cod;
+    public javax.swing.JTextField descrip;
+    public javax.swing.JTextField entrega;
+    public javax.swing.JTextField fecha;
+    public javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JTextField nom;
     private javax.swing.JTable tbl;
     // End of variables declaration//GEN-END:variables
 }
