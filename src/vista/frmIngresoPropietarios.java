@@ -37,7 +37,7 @@ public class frmIngresoPropietarios extends javax.swing.JDialog {
         txtNombre = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblPropietarios = new javax.swing.JTable();
+        jtPropietarios = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -51,7 +51,7 @@ public class frmIngresoPropietarios extends javax.swing.JDialog {
 
         jLabel4.setText("Telefono");
 
-        tblPropietarios.setModel(new javax.swing.table.DefaultTableModel(
+        jtPropietarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -61,7 +61,7 @@ public class frmIngresoPropietarios extends javax.swing.JDialog {
 
             }
         ));
-        jScrollPane1.setViewportView(tblPropietarios);
+        jScrollPane1.setViewportView(jtPropietarios);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -88,7 +88,7 @@ public class frmIngresoPropietarios extends javax.swing.JDialog {
                                                 .addComponent(txtTelefono, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
                                                 .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(txtApellidos, javax.swing.GroupLayout.Alignment.LEADING)))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnIngresarPropietario))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -170,7 +170,7 @@ public class frmIngresoPropietarios extends javax.swing.JDialog {
     public javax.swing.JLabel jLabel3;
     public javax.swing.JLabel jLabel4;
     public javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tblPropietarios;
+    public javax.swing.JTable jtPropietarios;
     public javax.swing.JTextField txtApellidos;
     public javax.swing.JTextField txtNombre;
     public javax.swing.JTextField txtTelefono;

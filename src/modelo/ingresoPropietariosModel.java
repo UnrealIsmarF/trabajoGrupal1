@@ -18,4 +18,5 @@ public void IngresoPropietarios(String Apellidos, String Nombre, String Telefono
             {
                 return ListaIngresoPropietarios;
             }
+
 }

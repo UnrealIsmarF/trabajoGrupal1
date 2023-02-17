@@ -1,7 +1,10 @@
 
+import controler.controlerIngresoPropietarios;
 import controler.controlerRegistroReparacion;
+import modelo.ingresoPropietariosModel;
 import modelo.registroReparacionModel;
 import vista.frmEnviarReparacion;
+import vista.frmIngresoPropietarios;
 import vista.frmVistaPrincipal;
 
 
@@ -13,8 +16,15 @@ public class main {
         frmVistaPrincipal VistaPrincipal = new frmVistaPrincipal();
         frmEnviarReparacion VistaReparacion = new frmEnviarReparacion(VistaPrincipal, true);
         registroReparacionModel VistaReparacionModel = new registroReparacionModel();
-        
+              
         controlerRegistroReparacion ControladorRegistroRep = new controlerRegistroReparacion(VistaPrincipal, VistaReparacion,
-        VistaReparacionModel);      
+        VistaReparacionModel);  
+        
+       frmIngresoPropietarios VistaIngresoPropietarios = new frmIngresoPropietarios(VistaPrincipal, true);
+       ingresoPropietariosModel VistaIngresoPropietariosModel = new ingresoPropietariosModel();
+       controlerIngresoPropietarios ControladorIngresoPropietarios = new controlerIngresoPropietarios(VistaPrincipal, VistaIngresoPropietarios,
+       VistaIngresoPropietariosModel);
+
     }  
+    
 }
