@@ -36,12 +36,12 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnIngresarPC" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnIngresarEquipo" min="-2" max="-2" attributes="0"/>
                           <Component id="btnIngresoPropietarios" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="133" max="32767" attributes="0"/>
+              <EmptySpace pref="209" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -49,7 +49,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-              <Component id="btnIngresarPC" min="-2" max="-2" attributes="0"/>
+              <Component id="btnIngresarEquipo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btnEntregadeEquipo" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -70,19 +70,16 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="btnIngresarPC">
+    <Component class="javax.swing.JButton" name="btnIngresarEquipo">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/pc-computer-with-monitor_icon-icons.com_56249.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="INGRESO DE EQUIPO"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btnEnviarReparacion">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/imgReparacion.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="ENVIAR A REPARACION"/>
       </Properties>
       <AuxValues>
@@ -91,9 +88,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnIngresoPropietarios">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/img usuarios.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="REGISTRO DE PROPIETARIOS"/>
       </Properties>
       <AuxValues>

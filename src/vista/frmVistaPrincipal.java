@@ -28,7 +28,7 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         btnEntregadeEquipo = new javax.swing.JButton();
-        btnIngresarPC = new javax.swing.JButton();
+        btnIngresarEquipo = new javax.swing.JButton();
         btnEnviarReparacion = new javax.swing.JButton();
         btnIngresoPropietarios = new javax.swing.JButton();
 
@@ -36,13 +36,10 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
 
         btnEntregadeEquipo.setText("Entrega De Equipo");
 
-        btnIngresarPC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pc-computer-with-monitor_icon-icons.com_56249.png"))); // NOI18N
-        btnIngresarPC.setText("INGRESO DE EQUIPO");
+        btnIngresarEquipo.setText("INGRESO DE EQUIPO");
 
-        btnEnviarReparacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imgReparacion.png"))); // NOI18N
         btnEnviarReparacion.setText("ENVIAR A REPARACION");
 
-        btnIngresoPropietarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/img usuarios.png"))); // NOI18N
         btnIngresoPropietarios.setText("REGISTRO DE PROPIETARIOS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -60,15 +57,15 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(114, 114, 114)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnIngresarPC)
+                            .addComponent(btnIngresarEquipo)
                             .addComponent(btnIngresoPropietarios))))
-                .addContainerGap(133, Short.MAX_VALUE))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addComponent(btnIngresarPC)
+                .addComponent(btnIngresarEquipo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnEntregadeEquipo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -119,7 +116,7 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnEntregadeEquipo;
     public javax.swing.JButton btnEnviarReparacion;
-    private javax.swing.JButton btnIngresarPC;
+    public javax.swing.JButton btnIngresarEquipo;
     public javax.swing.JButton btnIngresoPropietarios;
     // End of variables declaration//GEN-END:variables
 }

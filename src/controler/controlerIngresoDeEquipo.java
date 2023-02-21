@@ -28,7 +28,7 @@ public class controlerIngresoDeEquipo implements ActionListener{
         
         this.VistaIngresoEquipo.jtIngresoEquipo.setModel(TablaIngresoEquipo);
         
-        this.VistaPrincipal.btnEnviarReparacion.addActionListener(this);
+        this.VistaPrincipal.btnIngresarEquipo.addActionListener(this);
         
         this.VistaPrincipal.setExtendedState(frmVistaPrincipal.MAXIMIZED_BOTH);
         this.VistaPrincipal.setVisible(true);
@@ -37,7 +37,7 @@ public class controlerIngresoDeEquipo implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         
-        if(e.getSource()==this.VistaPrincipal.btnEnviarReparacion)
+        if(e.getSource()==this.VistaPrincipal.btnIngresarEquipo)
         {
             this.VistaIngresoEquipo.btnIngresarPC.addActionListener(this);
             
