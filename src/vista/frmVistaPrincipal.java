@@ -28,7 +28,7 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         btnEntregadeEquipo = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnIngresarPC = new javax.swing.JButton();
         btnEnviarReparacion = new javax.swing.JButton();
         btnIngresoPropietarios = new javax.swing.JButton();
 
@@ -36,7 +36,8 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
 
         btnEntregadeEquipo.setText("Entrega De Equipo");
 
-        jButton2.setText("jButton2");
+        btnIngresarPC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pc-computer-with-monitor_icon-icons.com_56249.png"))); // NOI18N
+        btnIngresarPC.setText("INGRESO DE EQUIPO");
 
         btnEnviarReparacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imgReparacion.png"))); // NOI18N
         btnEnviarReparacion.setText("ENVIAR A REPARACION");
@@ -49,33 +50,32 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(233, 233, 233)
-                .addComponent(btnEntregadeEquipo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(19, 19, 19))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addComponent(btnIngresoPropietarios))
+                        .addGap(130, 130, 130)
+                        .addComponent(btnEnviarReparacion))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(164, 164, 164)
+                        .addComponent(btnEntregadeEquipo))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(114, 114, 114)
-                        .addComponent(btnEnviarReparacion)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnIngresarPC)
+                            .addComponent(btnIngresoPropietarios))))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnEntregadeEquipo)
-                    .addComponent(jButton2))
-                .addGap(27, 27, 27)
+                .addGap(41, 41, 41)
+                .addComponent(btnIngresarPC)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnEntregadeEquipo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnIngresoPropietarios)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(btnEnviarReparacion)
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addGap(62, 62, 62))
         );
 
         pack();
@@ -119,7 +119,7 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnEntregadeEquipo;
     public javax.swing.JButton btnEnviarReparacion;
+    private javax.swing.JButton btnIngresarPC;
     public javax.swing.JButton btnIngresoPropietarios;
-    private javax.swing.JButton jButton2;
     // End of variables declaration//GEN-END:variables
 }

@@ -3,7 +3,6 @@ package modelo;
 
 import java.util.ArrayList;
 
-
 public class registroReparacionModel {
     
     public ArrayList<RegistroReparacion> ListaRegistroReparacion = new ArrayList<RegistroReparacion>();
