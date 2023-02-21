@@ -4,16 +4,17 @@ import java.util.ArrayList;
 
 
 public class EntregaEquipoModel {
-   public ArrayList<EntregaEquipoModel> DatosPersona   = new ArrayList<EntregaEquipoModel>();
+    
+   public ArrayList<entregaEquipo> DatosPersona   = new ArrayList<entregaEquipo>();
    
-   public void IngresoPersona(String Apellidos, String Nombre, String Telefono){
+   public void IngresoPersona(String Codigo, String Nombre, String Fecha , String Descripcion){
        
-        EntregaEquipoModel NuevaEntrega = new EntregaEquipoModel();
+        entregaEquipo NuevaEntrega = new entregaEquipo(Codigo, Nombre, Fecha, Descripcion);
         this.DatosPersona.add(NuevaEntrega);
-            }
+    }
 
-            public ArrayList EntregaEquipoModel()
-            {
-                return EntregaEquipoModel();
-            }
+    public ArrayList EntregaEquipoModel()
+    {
+        return EntregaEquipoModel();
+    }
 }

@@ -27,14 +27,14 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnEntregadeEquipo = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         btnEnviarReparacion = new javax.swing.JButton();
         btnIngresoPropietarios = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("jButton1");
+        btnEntregadeEquipo.setText("Entrega De Equipo");
 
         jButton2.setText("jButton2");
 
@@ -50,8 +50,8 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(233, 233, 233)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addComponent(btnEntregadeEquipo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addGap(19, 19, 19))
             .addGroup(layout.createSequentialGroup()
@@ -69,13 +69,13 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(btnEntregadeEquipo)
                     .addComponent(jButton2))
                 .addGap(27, 27, 27)
                 .addComponent(btnIngresoPropietarios)
-                .addGap(8, 8, 8)
+                .addGap(18, 18, 18)
                 .addComponent(btnEnviarReparacion)
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
 
         pack();
@@ -117,9 +117,9 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnEntregadeEquipo;
     public javax.swing.JButton btnEnviarReparacion;
     public javax.swing.JButton btnIngresoPropietarios;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     // End of variables declaration//GEN-END:variables
 }

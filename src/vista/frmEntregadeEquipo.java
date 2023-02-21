@@ -1,20 +1,20 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package vista;
 
 /**
  *
- * @author umg
+ * @author PALACIOS
  */
-public class EntregadeEquipo extends javax.swing.JFrame {
+public class frmEntregadeEquipo extends javax.swing.JDialog {
 
     /**
-     * Creates new form EntregadeEquipo
+     * Creates new form frmEntregadeEquipo1
      */
-    public EntregadeEquipo() {
+    public frmEntregadeEquipo(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
         initComponents();
     }
 
@@ -27,24 +27,35 @@ public class EntregadeEquipo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtcod = new javax.swing.JTextField();
-        txtnom = new javax.swing.JTextField();
-        txtfecha = new javax.swing.JTextField();
-        txtdescrip = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tbltabla = new javax.swing.JTable();
         btnentregar = new javax.swing.JButton();
         lblCod = new javax.swing.JLabel();
         lblNom = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
         lblDesc = new javax.swing.JLabel();
+        txtcod = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
+        txtnom = new javax.swing.JTextField();
+        txtfecha = new javax.swing.JTextField();
+        txtdescrip = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tbltabla = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setAlwaysOnTop(true);
-        setName("frame1\ndialog0"); // NOI18N
+
+        btnentregar.setForeground(new java.awt.Color(51, 51, 0));
+        btnentregar.setText("Entregar Equipo");
+
+        lblCod.setText("Codigo de Equipo");
+
+        lblNom.setText("Nombre de la Persona que recibe");
+
+        lblFecha.setText("Fecha de entrega");
+
+        lblDesc.setText("Descripcion Solucion");
 
         txtcod.setForeground(new java.awt.Color(51, 51, 0));
+
+        jLabel5.setText("ENTREGA EQUIPO");
 
         txtnom.setForeground(new java.awt.Color(51, 51, 0));
         txtnom.addActionListener(new java.awt.event.ActionListener() {
@@ -61,29 +72,14 @@ public class EntregadeEquipo extends javax.swing.JFrame {
 
         tbltabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {},
+                {}
             },
             new String [] {
-                "CODIGO", "PERSONA", "FECHA", "DESCRIPCION"
+
             }
         ));
         jScrollPane1.setViewportView(tbltabla);
-
-        btnentregar.setForeground(new java.awt.Color(51, 51, 0));
-        btnentregar.setText("Entregar Equipo");
-
-        lblCod.setText("Codigo de Equipo");
-
-        lblNom.setText("Nombre de la Persona que recibe");
-
-        lblFecha.setText("Fecha de entrega");
-
-        lblDesc.setText("Descripcion Solucion");
-
-        jLabel5.setText("ENTREGA EQUIPO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,7 +106,7 @@ public class EntregadeEquipo extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(263, 263, 263)
                         .addComponent(jLabel5)))
-                .addContainerGap(134, Short.MAX_VALUE))
+                .addContainerGap(125, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -149,7 +145,7 @@ public class EntregadeEquipo extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDesc)
                     .addComponent(txtdescrip, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(87, 87, 87))
         );
@@ -178,20 +174,28 @@ public class EntregadeEquipo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmEntregadeEquipo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EntregadeEquipo().setVisible(true);
+                frmEntregadeEquipo dialog = new frmEntregadeEquipo(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
             }
         });
     }
