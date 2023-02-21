@@ -27,35 +27,39 @@ public class EntregadeEquipo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        entrega = new javax.swing.JTextField();
-        cod = new javax.swing.JTextField();
-        nom = new javax.swing.JTextField();
-        fecha = new javax.swing.JTextField();
-        descrip = new javax.swing.JTextField();
+        txtcod = new javax.swing.JTextField();
+        txtnom = new javax.swing.JTextField();
+        txtfecha = new javax.swing.JTextField();
+        txtdescrip = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tbl = new javax.swing.JTable();
+        tbltabla = new javax.swing.JTable();
         btnentregar = new javax.swing.JButton();
+        lblCod = new javax.swing.JLabel();
+        lblNom = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
+        lblDesc = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setAlwaysOnTop(true);
+        setName("frame1\ndialog0"); // NOI18N
 
-        entrega.setForeground(new java.awt.Color(51, 51, 0));
-        entrega.setText("ENTREGA DE EQUIPO");
+        txtcod.setForeground(new java.awt.Color(51, 51, 0));
 
-        cod.setForeground(new java.awt.Color(51, 51, 0));
-        cod.setText("Codigo de Equipo");
+        txtnom.setForeground(new java.awt.Color(51, 51, 0));
+        txtnom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnomActionPerformed(evt);
+            }
+        });
 
-        nom.setForeground(new java.awt.Color(51, 51, 0));
-        nom.setText("Nombre de la Persona que recibe");
+        txtfecha.setForeground(new java.awt.Color(51, 51, 0));
 
-        fecha.setForeground(new java.awt.Color(51, 51, 0));
-        fecha.setText("Fecha de entrega");
-
-        descrip.setForeground(new java.awt.Color(51, 51, 0));
-        descrip.setText("Descripcion Solucion");
+        txtdescrip.setForeground(new java.awt.Color(51, 51, 0));
 
         jScrollPane1.setForeground(new java.awt.Color(51, 51, 0));
 
-        tbl.setModel(new javax.swing.table.DefaultTableModel(
+        tbltabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -66,10 +70,20 @@ public class EntregadeEquipo extends javax.swing.JFrame {
                 "CODIGO", "PERSONA", "FECHA", "DESCRIPCION"
             }
         ));
-        jScrollPane1.setViewportView(tbl);
+        jScrollPane1.setViewportView(tbltabla);
 
         btnentregar.setForeground(new java.awt.Color(51, 51, 0));
         btnentregar.setText("Entregar Equipo");
+
+        lblCod.setText("Codigo de Equipo");
+
+        lblNom.setText("Nombre de la Persona que recibe");
+
+        lblFecha.setText("Fecha de entrega");
+
+        lblDesc.setText("Descripcion Solucion");
+
+        jLabel5.setText("ENTREGA EQUIPO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -78,46 +92,74 @@ public class EntregadeEquipo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(272, 272, 272)
-                        .addComponent(entrega, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(cod, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(descrip, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnentregar))))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addGap(121, 121, 121)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblDesc)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtdescrip, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(121, 121, 121)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblNom)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtnom, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(263, 263, 263)
+                        .addComponent(jLabel5)))
                 .addContainerGap(134, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtcod, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblFecha)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnentregar)
+                .addGap(114, 114, 114))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(entrega, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(cod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jLabel5)
+                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnentregar))
-                .addGap(18, 18, 18)
-                .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(descrip, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                    .addComponent(txtcod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCod))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNom)
+                    .addComponent(txtnom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFecha)
+                            .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnentregar)
+                        .addGap(15, 15, 15)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDesc)
+                    .addComponent(txtdescrip, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(87, 87, 87))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtnomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtnomActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,12 +198,16 @@ public class EntregadeEquipo extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnentregar;
-    public javax.swing.JTextField cod;
-    public javax.swing.JTextField descrip;
-    public javax.swing.JTextField entrega;
-    public javax.swing.JTextField fecha;
+    private javax.swing.JLabel jLabel5;
     public javax.swing.JScrollPane jScrollPane1;
-    public javax.swing.JTextField nom;
-    private javax.swing.JTable tbl;
+    private javax.swing.JLabel lblCod;
+    private javax.swing.JLabel lblDesc;
+    private javax.swing.JLabel lblFecha;
+    private javax.swing.JLabel lblNom;
+    public javax.swing.JTable tbltabla;
+    public javax.swing.JTextField txtcod;
+    public javax.swing.JTextField txtdescrip;
+    public javax.swing.JTextField txtfecha;
+    public javax.swing.JTextField txtnom;
     // End of variables declaration//GEN-END:variables
 }

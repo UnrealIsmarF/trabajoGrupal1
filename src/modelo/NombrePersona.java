@@ -2,13 +2,16 @@ package modelo;
 
 public class NombrePersona{
         String nombre;
-        String apellido;
-        String telefono;
+        String codigo;
+        String descripcion;
+        String fecha;
         
-        public NombrePersona(String nombre, String apellido, String telefono){
-            this.apellido = apellido;
+        public NombrePersona(String nombre, String codigo, String descripcion, String fecha){
+            this.codigo = codigo;
             this.nombre = nombre;
-            this.telefono = telefono;
+            this.descripcion = descripcion;
+            this.fecha = fecha;
+            
             
         }
 
@@ -20,20 +23,30 @@ public class NombrePersona{
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+
     
 }

@@ -6,6 +6,8 @@ import modelo.registroReparacionModel;
 import vista.frmEnviarReparacion;
 import vista.frmIngresoPropietarios;
 import vista.frmVistaPrincipal;
+import vista.EntregadeEquipo;
+import modelo.NombrePersona;
 
 
 public class main {
@@ -16,9 +18,11 @@ public class main {
         frmVistaPrincipal VistaPrincipal = new frmVistaPrincipal();
         frmEnviarReparacion VistaReparacion = new frmEnviarReparacion(VistaPrincipal, true);
         registroReparacionModel VistaReparacionModel = new registroReparacionModel();
+        frmIngresoEquipo VistaEntregadeEquipo = new frmIngresoEquipo(VistaPrincipal, true);
               
         controlerRegistroReparacion ControladorRegistroRep = new controlerRegistroReparacion(VistaPrincipal, VistaReparacion,
         VistaReparacionModel);  
+       
         
        frmIngresoPropietarios VistaIngresoPropietarios = new frmIngresoPropietarios(VistaPrincipal, true);
        ingresoPropietariosModel VistaIngresoPropietariosModel = new ingresoPropietariosModel();
