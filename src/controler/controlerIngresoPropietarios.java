@@ -39,7 +39,7 @@ public class controlerIngresoPropietarios implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()== this.VistaPrincipal.btnIngresoPropietarios)
         {
-            this.VistaPrincipal.btnIngresoPropietarios.addActionListener(this);
+            this.VistaIngresoPropietarios.btnIngresarPropietario.addActionListener(this);
             
             this.VistaIngresoPropietarios.setLocationRelativeTo(null);
             this.VistaIngresoPropietarios.setVisible(true);

@@ -7,7 +7,7 @@ public class IngresoDeEquipoModel {
     
     public ArrayList<IngresoEquipo> ListaIngresoDeEquipo = new ArrayList<IngresoEquipo>();
     
-    public void RegistroReparacion(String Marca, String Modelo, String Tipo, String Problema)
+    public void RegistroEquipos(String Marca, String Modelo, String Tipo, String Problema)
     {
         IngresoEquipo NuevoIngresoEquipo = new IngresoEquipo(Marca, Modelo, Tipo, Problema);
         this.ListaIngresoDeEquipo.add(NuevoIngresoEquipo);

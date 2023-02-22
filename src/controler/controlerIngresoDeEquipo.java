@@ -47,7 +47,7 @@ public class controlerIngresoDeEquipo implements ActionListener{
         
         if(e.getSource()==this.VistaIngresoEquipo.btnIngresarPC)
         {
-            this.VistaIngresoEquipoModel.RegistroReparacion(this.VistaIngresoEquipo.txtMarca.getText(), 
+            this.VistaIngresoEquipoModel.RegistroEquipos(this.VistaIngresoEquipo.txtMarca.getText(), 
                     this.VistaIngresoEquipo.txtModelo.getText(), this.VistaIngresoEquipo.txtTipoComputadora.getText(),
                     this.VistaIngresoEquipo.txtProblemaPresenta.getText());
         }  

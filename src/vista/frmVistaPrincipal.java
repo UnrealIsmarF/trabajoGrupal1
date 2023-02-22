@@ -34,12 +34,16 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnEntregadeEquipo.setText("Entrega De Equipo");
+        btnEntregadeEquipo.setIcon(new javax.swing.ImageIcon("C:\\Users\\PALACIOS\\Downloads\\UMGentregas.png")); // NOI18N
+        btnEntregadeEquipo.setText("ENTREGA DE EQUIPOS");
 
+        btnIngresarEquipo.setIcon(new javax.swing.ImageIcon("C:\\Users\\PALACIOS\\Downloads\\UMGingreso.png")); // NOI18N
         btnIngresarEquipo.setText("INGRESO DE EQUIPO");
 
+        btnEnviarReparacion.setIcon(new javax.swing.ImageIcon("C:\\Users\\PALACIOS\\Downloads\\UMGreparacion.png")); // NOI18N
         btnEnviarReparacion.setText("ENVIAR A REPARACION");
 
+        btnIngresoPropietarios.setIcon(new javax.swing.ImageIcon("C:\\Users\\PALACIOS\\Downloads\\UMGregistros.png")); // NOI18N
         btnIngresoPropietarios.setText("REGISTRO DE PROPIETARIOS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -47,32 +51,26 @@ public class frmVistaPrincipal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(btnEnviarReparacion))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(164, 164, 164)
-                        .addComponent(btnEntregadeEquipo))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnIngresarEquipo)
-                            .addComponent(btnIngresoPropietarios))))
-                .addContainerGap(209, Short.MAX_VALUE))
+                .addGap(183, 183, 183)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnIngresoPropietarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnIngresarEquipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEnviarReparacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEntregadeEquipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(23, 23, 23)
                 .addComponent(btnIngresarEquipo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnEntregadeEquipo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnIngresoPropietarios)
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
+                .addComponent(btnIngresoPropietarios, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(btnEnviarReparacion)
-                .addGap(62, 62, 62))
+                .addGap(18, 18, 18)
+                .addComponent(btnEntregadeEquipo)
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         pack();
